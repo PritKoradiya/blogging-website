@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weekly Summary</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #646dba; padding: 20px; text-align: center; }
+        nav { background-color: hwb(0 18% 82%); padding: 15px; border-radius: 10px; margin-bottom: 30px; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        
+        table { width: 80%; margin: 0 auto; border-collapse: collapse; background-color: white; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+        th { background-color:  hwb(232 22% 33%); color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+
+        .footer-nav {
+            background-color: #333;        
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 40px;
+            text-align: center;
+       }
+
+        .footer-nav p {
+            color: white;
+            font-size: 16px;
+            margin: 0;
+            font-weight: bold;
+      }
+       .social-icon {
+            width: 1em;
+            height: 1em;
+            margin-left: 8px;
+            vertical-align: middle;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="study.html">Study</a>
+        <a href="movie.html">Movies & Series</a>
+        <a href="travel.html">Travel</a>
+        <a href="summary.html">Summary</a>
+    </nav>
+
+    <h1>Week in Review: Data Table</h1>
+
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Activity</th>
+            <th>Mood</th>
+            <th>Hours Spend</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Study HTML Intro</td>
+            <td>Excited</td>
+            <td>3 Hrs</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Study Formatting</td>
+            <td>Focused</td>
+            <td>4 Hrs</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Gaming & Movies</td>
+            <td>Relaxed</td>
+            <td>3 Hr</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>Traveling</td>
+            <td>Excited</td>
+            <td>9 Hrs</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Coding Tables</td>
+            <td>Happy</td>
+            <td>5 Hrs</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <div style="background-color: #646dba; width: 80%; margin: 0 auto; padding: 20px; border-radius: 10px;">
+        <h3>Weekly Feedback</h3>
+        <form>
+            <textarea rows="4" cols="50" placeholder="Write your summary here..."></textarea><br><br>
+            
+            <input type="hidden" name="user_id" value="12345">
+
+            <input type="submit" value="Submit Report">
+            <input type="reset" value="Reset Form">
+            <input type="button" value="Click Me!" onclick="alert('Every day is a new opportunity. Make the most of it')">
+            <br><br>
+            
+            <p>Or submit using this image:</p>
+            <input 
+                 type="image" 
+                 src="submit.jpg" 
+                 alt="Submit"
+                 style="width:60px; height:auto;">
+
+        </form>
+    </div>
+
+    <p>Thanks for visiting my blog!</p>
+
+     <footer class="footer-nav">
+    <p>
+        &copy; Jan 2026 My Weekly Blog
+        <img src="youtube.ico" alt="YouTube" class="social-icon">
+        <img src="instagram.ico" alt="Instagram" class="social-icon">
+        <img src="telegram.ico" alt="Telegram" class="social-icon">
+    </p>
+    </footer>
+
+</body>
+</html>

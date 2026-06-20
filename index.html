@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Week - Home</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-image: url("https://img.freepik.com/free-vector/modern-desktop-background-geometric-blue-design-vector_53876-135923.jpg?semt=ais_hybrid&w=740&q=80");
+         margin: 0; padding: 20px; text-align: center; }
+        nav { background-color: #333; padding: 15px; border-radius: 10px; margin-bottom: 20px; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 18px; font-weight: bold; }
+        nav a:hover { color: #ffeb3b; }
+        h1 { color: #ffffff; }
+       .content { background-color: lch(35.62% 88.12 302.48); padding: 40px; border-radius: 15px; }
+        
+        blink { animation: blinker 1s linear infinite; font-weight: bold; color: red; }
+        @keyframes blinker { 50% { opacity: 0; } }
+
+        .footer-nav {
+            background-color: #333;        
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 40px;
+            text-align: center;
+       }
+
+        .footer-nav p {
+            color: white;
+            font-size: 16px;
+            margin: 0;
+            font-weight: bold;
+      }
+
+        .vlog-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .vlog-container video {         
+            border-radius: 15px;
+            border: 3px solid #333;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            cursor: pointer;
+        }
+
+        .vlog-container video:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+         }
+
+        .social-icon {
+            width: 1em;
+            height: 1em;
+            margin-left: 8px;
+            vertical-align: middle;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .status-banner {
+            background-color: #563cbc;
+            padding: 5px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="study.html">Study</a>
+        <a href="movie.html">Movies & Series</a>
+        <a href="travel.html">Travel</a>
+        <a href="summary.html">Summary</a>
+    </nav>
+
+    <article>
+        <header>
+            <div class="status-banner">
+            <p><b> Visitor! Current Status: <blink>ONLINE</blink></b></p>
+            </div>
+        </header>
+
+        <div class="content">
+            <h1>Welcome to My Week!</h1>
+            <h3>A digital diary of my life from Monday to Sunday.</h3>
+            <p>This website documents everything I did this week, from learning HTML to exploring the city.</p>
+            
+        
+            <hr>
+            
+            <button onclick="document.getElementById('welcomeDialog').showModal()">Click for a Surprise</button>
+        </div>
+
+        
+
+    </article>
+
+    
+
+    <dialog id="welcomeDialog">
+        <p>Thanks for visiting my site!</p>
+        <form method="dialog">
+            <button>Close</button>
+        </form>
+    </dialog>
+
+    <br>
+
+    <header>
+            <div style="background-color:#333 ; padding: 2px; border-radius: 15px; margin-bottom: 10px; color: white;">
+            <p><b> This is my Latest Vlog </b></p>
+            </div>
+        </header>
+
+    
+
+
+    <script>
+        alert("Welcome to the My Weekly Blog!");
+    </script>
+
+    <footer class="footer-nav">
+    <p>
+        &copy; Jan 2026 My Weekly Blog
+        <img src="youtube.ico" alt="YouTube" class="social-icon">
+        <img src="instagram.ico" alt="Instagram" class="social-icon">
+        <img src="telegram.ico" alt="Telegram" class="social-icon">
+    </p>
+    </footer>
+
+    
+
+</body>
+</html>
