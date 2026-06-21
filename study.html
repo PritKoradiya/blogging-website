@@ -1,10 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Study Log</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Study Log</title>
+
+<style>
+
+nav{
+    background: #333;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 18px 0;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 30px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #6c63ff;
+}
+
+nav a.active{
+    border-bottom: 3px solid #6c63ff;
+}
+
+.content{
+    width: 90%;
+    margin: auto;
+}
+
+.submit-btn{
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+}
+
+.study-embed{
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+.study-video{
+    width: 500px;
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icon{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+</style>
+
 </head>
 <body>
 
@@ -17,19 +85,30 @@
 </nav>
 
 <div class="content">
+
     <h1>What I Learned This Week</h1>
 
-    <p>This week was focused entirely on <b>Web Development</b>. It was challenging but fun!</p>
+    <p>
+        This week was focused entirely on <b>Web Development</b>.
+        It was challenging but fun!
+    </p>
 
     <h2>Day 1: Theory</h2>
-    <p>I learned about <mark>Browsers and Editors</mark>.</p>
 
     <p>
-        Old-style code view: <tt>&lt;html&gt;Hello&lt;/html&gt;</tt><br>
-        Mathematical example: H<sub>2</sub>O and x<sup>2</sup>
+        I learned about <mark>Browsers and Editors</mark>.
+    </p>
+
+    <p>
+        Old-style code view:
+        <tt>&lt;html&gt;Hello&lt;/html&gt;</tt><br>
+
+        Mathematical example:
+        H<sub>2</sub>O and x<sup>2</sup>
     </p>
 
     <h3>Topics Covered</h3>
+
     <ul>
         <li>HTML Tags</li>
         <li>CSS Styling</li>
@@ -37,73 +116,119 @@
     </ul>
 
     <h3>Definitions</h3>
+
     <dl>
         <dt>HTML</dt>
         <dd>HyperText Markup Language</dd>
     </dl>
 
     <h2>Day 2: Coding</h2>
+
     <p>
         <em>"Always close your tags unless they are self-closing!"</em>
     </p>
 
     <form>
         <fieldset>
+
             <legend>Student Login Area</legend>
 
             <label>Username:</label>
-            <input type="text" id="username" name="username" placeholder="Enter username" title="Username"><br><br>
+            <input type="text"
+                   id="username"
+                   name="username"
+                   placeholder="Enter username"
+                   title="Username">
+            <br><br>
 
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter password" title="Password"><br><br>
+            <input type="password"
+                   id="password"
+                   name="password"
+                   placeholder="Enter password"
+                   title="Password">
+            <br><br>
 
             <label for="upload-file">Upload File:</label>
-            <input type="file" id="upload-file" name="upload-file" title="Upload File"><br><br>
-
-            <input type="radio" id="mode-light" name="mode" value="light" title="Light mode">
-            <label for="mode-light">Light</label>
-            <input type="radio" id="mode-dark" name="mode" value="dark" title="Dark mode">
-            <label for="mode-dark">Dark</label><br><br>
-
-            <input type="checkbox" id="agree" name="agree" title="Agree to terms">
-            <label for="agree">Agree</label>
-            <input type="checkbox" id="disagree" name="disagree" title="Do not agree">
-            <label for="disagree">Disagree</label>
+            <input type="file"
+                   id="upload-file"
+                   name="upload-file"
+                   title="Upload File">
             <br><br>
-              <input
-                  type="image"
-                  src="submit.jpg"
-                  alt="Submit"
-                  class="submit-btn">
+
+            <input type="radio"
+                   id="mode-light"
+                   name="mode"
+                   value="light"
+                   title="Light mode">
+            <label for="mode-light">Light</label>
+
+            <input type="radio"
+                   id="mode-dark"
+                   name="mode"
+                   value="dark"
+                   title="Dark mode">
+            <label for="mode-dark">Dark</label>
+
+            <br><br>
+
+            <input type="checkbox"
+                   id="agree"
+                   name="agree"
+                   title="Agree to terms">
+            <label for="agree">Agree</label>
+
+            <input type="checkbox"
+                   id="disagree"
+                   name="disagree"
+                   title="Do not agree">
+            <label for="disagree">Disagree</label>
+
+            <br><br>
+
+            <input
+                type="image"
+                src="submit.jpg"
+                alt="Submit"
+                class="submit-btn">
+
         </fieldset>
     </form>
 
     <h2>Embedded Study Image</h2>
- <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+
+    <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
         class="study-embed"
         alt="HTML5 Logo">
 
     <h2>Study Video</h2>
+
     <video class="study-video" controls>
-        <source src="HTML_Tutorial_for_Beginners_Complete_HTML_with_Notes_Code_1080p.mp4" type="video/mp4">
+        <source
+            src="HTML_Tutorial_for_Beginners_Complete_HTML_with_Notes_Code_1080p.mp4"
+            type="video/mp4">
+
         Your browser does not support the video tag.
     </video>
 
 </div>
 
-
-
 <br>
+
 <footer class="footer">
-   <p>
-    &copy; Jan 2026 My Weekly Blog
-    <span>
-        <img src="youtube.ico" alt="YouTube" class="social-icon">
-        <img src="instagram.ico" alt="Instagram" class="social-icon">
-        <img src="telegram.ico" alt="Telegram" class="social-icon">
-    </span>
-</p>
-    </footer>
+
+    <p>
+        &copy; Jan 2026 My Weekly Blog
+
+        <span>
+            <img src="youtube.ico" alt="YouTube" class="social-icon">
+            <img src="instagram.ico" alt="Instagram" class="social-icon">
+            <img src="telegram.ico" alt="Telegram" class="social-icon">
+        </span>
+    </p>
+
+</footer>
 
 </body>
 </html>
