@@ -10,7 +10,7 @@
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="study.html">Study</a>
+    <a href="study.html" class="active">Study</a>
     <a href="movie.html">Movies & Series</a>
     <a href="travel.html">Travel</a>
     <a href="summary.html">Summary</a>
@@ -57,14 +57,18 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" placeholder="Enter password" title="Password"><br><br>
 
-            <label>Upload File:</label>
-            <input type="file"><br><br>
+            <label for="upload-file">Upload File:</label>
+            <input type="file" id="upload-file" name="upload-file" title="Upload File"><br><br>
 
-            <input type="radio" name="mode"> Light
-            <input type="radio" name="mode"> Dark<br><br>
+            <input type="radio" id="mode-light" name="mode" value="light" title="Light mode">
+            <label for="mode-light">Light</label>
+            <input type="radio" id="mode-dark" name="mode" value="dark" title="Dark mode">
+            <label for="mode-dark">Dark</label><br><br>
 
-            <input type="checkbox"> Agree
-            <input type="checkbox"> disAgree
+            <input type="checkbox" id="agree" name="agree" title="Agree to terms">
+            <label for="agree">Agree</label>
+            <input type="checkbox" id="disagree" name="disagree" title="Do not agree">
+            <label for="disagree">Disagree</label>
             <br><br>
               <input
                   type="image"
@@ -75,10 +79,9 @@
     </form>
 
     <h2>Embedded Study Image</h2>
-    <embed
-        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+ <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
         class="study-embed"
-        type="image/svg+xml">
+        alt="HTML5 Logo">
 
     <h2>Study Video</h2>
     <video class="study-video" controls>
@@ -92,12 +95,14 @@
 
 <br>
 <footer class="footer">
-    <p>
-        &copy; Jan 2026 My Weekly Blog
+   <p>
+    &copy; Jan 2026 My Weekly Blog
+    <span>
         <img src="youtube.ico" alt="YouTube" class="social-icon">
         <img src="instagram.ico" alt="Instagram" class="social-icon">
         <img src="telegram.ico" alt="Telegram" class="social-icon">
-    </p>
+    </span>
+</p>
     </footer>
 
 </body>
